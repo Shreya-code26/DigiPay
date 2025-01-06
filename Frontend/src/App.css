@@ -1,0 +1,182 @@
+/* General Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+}
+
+/* Container for the whole app */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Navigation Styling */
+nav {
+  margin-bottom: 30px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav li {
+  font-size: 1.2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #1abc9c;
+}
+
+/* Main Content Styling */
+main {
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for Forms (e.g., Register, Login) */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+form button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+form button:hover {
+  background-color: #1abc9c;
+}
+
+/* Card-like Dashboard Components */
+.dashboard-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+
+.dashboard-card h2 {
+  color: #34495e;
+  font-size: 1.5rem;
+}
+
+.dashboard-card p {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+/* Buttons Styling (for Dashboard) */
+.dashboard-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dashboard-btn:hover {
+  background-color: #1abc9c;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+footer a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #1abc9c;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .app-container {
+      padding: 10px;
+  }
+
+  header h1 {
+      font-size: 2.5rem;
+  }
+
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  form {
+      padding: 10px;
+  }
+  
+  .dashboard-card {
+      margin: 10px;
+  }
+}
